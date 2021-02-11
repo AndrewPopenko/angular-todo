@@ -69,7 +69,6 @@ export class TestData {
             category: TestData.categories[2],
             date: new Date('2019-06-11')
         },
-
         {
             id: 7,
             title: 'Find tickets to Turkey, choose a hotel ',
@@ -85,7 +84,7 @@ export class TestData {
         },
         {
             id: 9,
-            title: 'Подтянуться 10 раз',
+            title: 'Pull up 10 times ',
             priority: TestData.priorities[2],
             completed: false,
             category: TestData.categories[4],
@@ -93,94 +92,83 @@ export class TestData {
         },
         {
             id: 10,
-            title: 'Пробежать 100 м',
+            title: 'Run 100 m ',
             priority: TestData.priorities[0],
             completed: true,
             category: TestData.categories[4]
         },
-
         {
             id: 11,
-            title: 'Организовать детский праздник ',
+            title: 'Organize a children\'s party',
             completed: false
         },
-
         {
             id: 12,
-            title: 'Сходить на лекцию "Как научиться программировать на Java"',
+            title: 'Go to the lecture "How to learn to program in Java"',
             priority: TestData.priorities[1],
             completed: false,
             category: TestData.categories[2]
         },
         {
             id: 13,
-            title: 'Купить продукты на неделю',
+            title: 'Buy groceries for a week',
             priority: TestData.priorities[2],
             completed: false,
             category: TestData.categories[5],
             date: new Date('2019-05-11')
         },
-
         {
             id: 14,
-            title: 'Провести собрание по поводу всех проектов',
+            title: 'Have a meeting about all projects',
             completed: true,
             category: TestData.categories[0]
         },
-
         {
             id: 15,
-            title: 'Сдать экзамен по Java',
+            title: 'Pass the Java exam ',
             priority: TestData.priorities[2],
             completed: true
         },
-
-
         {
             id: 16,
-            title: 'Положить 100 000 р в банк на депозит',
+            title: 'Put 100,000 dollars in the bank for deposit ',
             priority: TestData.priorities[3],
             completed: false,
             category: TestData.categories[6]
         },
-
         {
             id: 17,
-            title: 'Попросить аванс на работе',
+            title: 'Ask for an advance payment at work ',
             priority: TestData.priorities[2],
             completed: false,
             category: TestData.categories[6]
         },
-
         {
             id: 18,
-            title: 'Сдать анализы, проверить гемоглобин',
+            title: 'Get tested, check hemoglobin ',
             priority: TestData.priorities[3],
             completed: false,
             category: TestData.categories[8],
             date: new Date('2020-12-11')
 
         },
-
         {
             id: 19,
-            title: 'Сравнить новый айпад с самсунгом',
+            title: 'Compare new iPad with Samsung ',
             priority: TestData.priorities[0],
             completed: false,
             category: TestData.categories[7],
             date: new Date('2019-10-11')
 
         },
-
         {
             id: 20,
-            title: 'Футбол с сотрудниками',
+            title: 'Football with employees',
             priority: TestData.priorities[0],
             completed: false,
             category: TestData.categories[4],
             date: new Date('2019-03-17')
 
         }
-
     ];
 }
