@@ -18,5 +18,4 @@ export class CategoriesComponent implements OnInit {
   ngOnInit(): void {
     this.categories = this.dataHandler.getCategories();
   }
-
 }
