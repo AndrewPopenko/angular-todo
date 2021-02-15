@@ -9,8 +9,8 @@
       </a></div>
     <div class="sidebar-wrapper">
       <ul class="nav">
-        <li class="nav-item" *ngFor="let item of categories">
-          <a class="nav-link" href="./dashboard.html">
+        <li class="nav-item" *ngFor="let item of categories" (click)="showTasksByCategory(item)">
+          <a class="nav-link">
             <!-- <i class="material-icons">dashboard</i> -->
             <p>{{ item.title }}</p>
           </a>
