@@ -9,7 +9,11 @@ x<div class="sidebar" data-color="purple" data-background-color="white" data-ima
       </a></div>
     <div class="sidebar-wrapper">
       <ul class="nav">
-        <li class="nav-item" *ngFor="let item of categories" >
+        <li 
+        class="nav-item pointer"
+        *ngFor="let item of categories"
+        [class.active]="selectedCategory === item"
+        >
           <a class="nav-link" (click)="showTasksByCategory(item)">
             <!-- <i class="material-icons">dashboard</i> -->
             <p>{{ item.title }}</p>
