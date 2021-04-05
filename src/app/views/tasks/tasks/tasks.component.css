@@ -6,3 +6,28 @@
 .novalue {
     color: #b7b7b7;
 }
+
+.column_color {
+    width: 1%;
+}
+
+.column_id {
+    width: 4%;
+    text-align: center;
+}
+
+.column_title {
+    width: 40%;
+}
+
+.column_date {
+    width: 10%;
+}
+
+.column_priority {
+    width: 10%;
+}
+
+.column_category {
+    width: 10%;
+}

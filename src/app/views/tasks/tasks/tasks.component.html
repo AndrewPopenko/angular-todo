@@ -7,48 +7,49 @@
     <table [dataSource]="dataSource" mat-table>
       <ng-container matColumnDef='color'>
         <th *matHeaderCellDef mat-header-cell></th>
-        <td *matCellDef="let task;" [style.background-color]="getPriorityColor(task)" mat-cell></td>
+        <td *matCellDef="let task;"
+            [style.background-color]="getPriorityColor(task)"
+            mat-cell
+            class="column_color"></td>
       </ng-container>
 
       <ng-container matColumnDef='id'>
         <th *matHeaderCellDef mat-header-cell></th>
-        <td *matCellDef="let index = index;" mat-cell> {{ index + 1 }}</td>
+        <td *matCellDef="let index = index;"
+            mat-cell
+            class="column_id"> {{ index + 1 }} </td>
       </ng-container>
 
       <ng-container matColumnDef="title">
-        <th *matHeaderCellDef mat-header-cell> Название</th>
-        <td
-         *matCellDef="let task"
-         [class.completed]="task.completed"
-         mat-cell
-        > {{task.title}} </td>
+        <th *matHeaderCellDef mat-header-cell>Title</th>
+        <td *matCellDef="let task"
+            [class.completed]="task.completed"
+            mat-cell
+            class="column_title"> {{task.title}} </td>
       </ng-container>
 
       <ng-container matColumnDef="date">
-        <th *matHeaderCellDef mat-header-cell> Срок </th>
-        <td
-          *matCellDef="let task"
-          [ngClass]="{'completed': task.completed, 'nodate': task.date == null}"
-          mat-cell
-        > {{task.date | date: "medium"}} </td>
+        <th *matHeaderCellDef mat-header-cell>Date</th>
+        <td *matCellDef="let task"
+            [ngClass]="{'completed': task.completed, 'nodate': task.date == null}"
+            mat-cell
+            class="column_date"> {{task.date | date: "medium"}} </td>
       </ng-container>
 
       <ng-container matColumnDef="priority">
-        <th *matHeaderCellDef mat-header-cell> Приоритет</th>
-        <td 
-          *matCellDef="let task"
-          [ngClass]="{'completed': task.completed, 'nopriority': task.priority == null}"
-          mat-cell
-        > {{task.priority ? task.priority.title : "Без приоритета"}} </td>
+        <th *matHeaderCellDef mat-header-cell>Priority</th>
+        <td *matCellDef="let task"
+            [ngClass]="{'completed': task.completed, 'nopriority': task.priority == null}"
+            mat-cell
+            class="column_priority"> {{task.priority ? task.priority.title : "Lack of priority"}} </td>
       </ng-container>
 
       <ng-container matColumnDef="category">
-        <th *matHeaderCellDef mat-header-cell> Категория</th>
-        <td 
-          *matCellDef="let task"
-          [ngClass]="{'completed': task.completed, 'nocategory': task.category == null, 'link': !task.completed && task.category}"
-          mat-cell
-        > {{task.category ? task.category.title : "Без категории"}} </td>
+        <th *matHeaderCellDef mat-header-cell>Category</th>
+        <td *matCellDef="let task"
+            [ngClass]="{'completed': task.completed, 'nocategory': task.category == null, 'link': !task.completed && task.category}"
+            mat-cell
+            class="column_category"> {{task.category ? task.category.title : "No category"}} </td>
       </ng-container>
 
       <tr *matHeaderRowDef="displayedColumns;" mat-header-row></tr>
